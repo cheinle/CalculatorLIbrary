@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python==3.8.2=hd5f0129_7_cpython
+  - python==3.8.2
   - flake8=3.8.1=pyh9f0ad1d_0
   - pytest=5.4.2=py38h32f6830_0
   - pytest-cov=2.8.1=py_0
