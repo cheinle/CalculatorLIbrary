@@ -21,6 +21,7 @@ jobs:
             chmod +x ~/miniconda.sh && bash ~/miniconda.sh -b -p $HOME/miniconda
             export PATH=$HOME/miniconda/bin:$PATH
       # Step 3: create virtual env and install dependencies
+      # /home/circleci/repo
       - run:
           name: install dependencies
           command: |
