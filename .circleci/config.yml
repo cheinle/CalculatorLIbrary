@@ -30,6 +30,7 @@ jobs:
             export PATH=$HOME/miniconda/bin:$PATH
             conda env create -f requirements.yml
             conda init bash
+            source ~/.bashrc
             conda activate calculator
 
       # Step 3: run linter and tests
@@ -38,6 +39,7 @@ jobs:
           command: |
             export PATH=$HOME/miniconda/bin:$PATH
             conda init bash
+            source ~/.bashrc
             conda activate calculator
             flake8 --statistics
             pytest -v --cov=calculator
