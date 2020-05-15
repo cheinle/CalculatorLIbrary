@@ -29,7 +29,7 @@ jobs:
             pwd
             export PATH=$HOME/miniconda/bin:$PATH
             conda env create -f requirements.yml
-            conda init
+            conda init bash
             conda activate calculator
 
       # Step 3: run linter and tests
@@ -37,7 +37,7 @@ jobs:
           name: run tests
           command: |
             export PATH=$HOME/miniconda/bin:$PATH
-            conda init
+            conda init bash
             conda activate calculator
             flake8 --statistics
             pytest -v --cov=calculator
