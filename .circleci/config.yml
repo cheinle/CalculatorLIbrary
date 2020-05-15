@@ -25,9 +25,9 @@ jobs:
           name: install dependencies
           command: |
             ls
-            cwd
+            pwd
             export PATH=$HOME/miniconda/bin:$PATH
-            conda env create -f CalculatorLIbrary/requirements.yml
+            conda env create -f requirements.yml
             conda activate calculator
 
       # Step 3: run linter and tests
